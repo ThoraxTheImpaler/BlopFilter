@@ -36,20 +36,76 @@ Show
 
 ###	END CURRENCY
 
-### START 1x1
+### LEAGUES
+# Low level keys
 Hide
-	BaseType "Rune"
-	AreaLevel > 59
+	BaseType "Ultimatum" "Barya"
+	ItemLevel < 80
+	AreaLevel > 77
+	SetFontSize 50
+	SetTextColor 255 255 255
+	SetBorderColor 255 255 255
+	SetBackgroundColor 148 111 211
+	PlayEffect Grey
+
+# Keys
+Show
+	BaseType "Simulacrum" " Tablet" "Breachstone" "Expedition Logbook" "Test of" "Cowardly Fate" "Deadly Fate" "Victorious Fate" "Bronze Key" "Silver Key" "Gold Key"
+	SetTextColor 255 207 255
+	SetBorderColor 255 207 255
+	SetBackgroundColor 65 20 80
+	PlayAlertSound 2
+	PlayEffect Purple
+	MinimapIcon 1 Purple Square
+	SetFontSize 45
 
 Show
-	BaseType "Rune"
-	AreaLevel < 60
-	SetFontSize 35
-	SetTextColor 0 0 0
-	SetBorderColor 0 0 0
-	SetBackgroundColor 111 177 111
-	PlayAlertSound 12
+	BaseType "Ultimatum" "Barya"
+	SetFontSize 50
+	SetTextColor 255 255 255
+	SetBorderColor 255 255 255
+	SetBackgroundColor 148 111 211
+	PlayAlertSound 4
+	PlayEffect Grey
 
+## Sanctum
+Show
+	BaseType "Relic"
+	PlayEffect Grey
+	SetBorderColor 218 160 109
+## Delirium
+Show
+	BaseType "Distilled Disgust" "Distilled Despair" "Distilled Fear" "Distilled Suffering" "Distilled Isolation"
+	SetFontSize 50
+	SetTextColor 173 255 47
+	SetBorderColor 173 255 47
+	SetBackgroundColor 255 255 255
+	PlayAlertSound 6
+	PlayEffect Yellow
+	MinimapIcon 2 Yellow Star
+
+Show
+	BaseType "Distilled"
+	SetFontSize 50
+	SetTextColor 0 0 0
+	SetBorderColor 255 255 255
+	SetBackgroundColor 173 255 47
+	PlayAlertSound 2
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Square
+## Breach
+Show
+	BaseType "Catalyst" "Breach Splinter"
+	SetBackgroundColor 40 8 97
+	MinimapIcon 1 Purple Raindrop
+
+Show
+	BaseType "Breach Ring"
+	SetBackgroundColor 40 8 97
+	MinimapIcon 1 Purple Diamond
+	PlayEffect Purple
+
+## Ultimatum
 Show
 	BaseType "Soul Core"
 	BaseType "Azcapa" "Tacati"
@@ -70,6 +126,7 @@ Show
 	PlayAlertSound 12
 	PlayEffect Cyan
 
+## Ritual
 Show
 	Class "Omen"
 	BaseType "Omen of"
@@ -81,6 +138,40 @@ Show
 	MinimapIcon 2 White Circle
 	SetFontSize 40
 
+## Essence
+Show
+	BaseType "Essence"
+	BaseType "Greater"
+	SetFontSize 35
+	SetTextColor 255 255 255
+	SetBorderColor 0 0 0
+	SetBackgroundColor 137 207 240
+	PlayAlertSound 6
+	PlayEffect Cyan
+	Continue
+	Show
+		BaseType "Essence"
+		SetFontSize 35
+		SetTextColor 255 255 255
+		SetBorderColor 0 0 0
+		SetBackgroundColor 137 207 240 200
+### END LEAGUES
+
+### START 1x1
+Hide
+	BaseType "Rune"
+	AreaLevel > 59
+
+Show
+	BaseType "Rune"
+	AreaLevel < 60
+	SetFontSize 35
+	SetTextColor 0 0 0
+	SetBorderColor 0 0 0
+	SetBackgroundColor 111 177 111
+	PlayAlertSound 12
+
+# Bad gems
 Hide
 	BaseType "Spirit Gem" "Skill Gem" "Support Gem"
 	ItemLevel <= 18
@@ -111,23 +202,6 @@ Show
 	MinimapIcon 2 White Star
 
 Show
-	BaseType "Essence"
-	BaseType "Greater"
-	SetFontSize 35
-	SetTextColor 255 255 255
-	SetBorderColor 0 0 0
-	SetBackgroundColor 137 207 240
-	PlayAlertSound 6
-	PlayEffect Cyan
-	Continue
-	Show
-		BaseType "Essence"
-		SetFontSize 35
-		SetTextColor 255 255 255
-		SetBorderColor 0 0 0
-		SetBackgroundColor 137 207 240 200
-
-Show
 	Class Jewel
 	SetFontSize 35
 	SetTextColor 0 0 0
@@ -137,6 +211,7 @@ Show
 	MinimapIcon 1 Green Kite
 	PlayAlertSound 3
 
+# Bad waystones
 Hide
 	BaseType "Waystone"
 	WaystoneTier < 14
@@ -163,63 +238,6 @@ Show
 	MinimapIcon 1 Purple Star
 	PlayEffect Purple
 
-### LEAGUES
-Hide
-	BaseType "Ultimatum" "Barya"
-	ItemLevel < 80
-	AreaLevel > 77
-	SetFontSize 50
-	SetTextColor 255 255 255
-	SetBorderColor 255 255 255
-	SetBackgroundColor 148 111 211
-	PlayEffect Grey
-
-
-Show
-	BaseType "Ultimatum" "Barya"
-	SetFontSize 50
-	SetTextColor 255 255 255
-	SetBorderColor 255 255 255
-	SetBackgroundColor 148 111 211
-	PlayAlertSound 4
-	PlayEffect Grey
-
-Show
-	BaseType "Relic"
-	PlayEffect Grey
-	SetBorderColor 218 160 109
-
-Show
-	BaseType "Distilled Disgust" "Distilled Despair" "Distilled Fear" "Distilled Suffering" "Distilled Isolation"
-	SetFontSize 50
-	SetTextColor 173 255 47
-	SetBorderColor 173 255 47
-	SetBackgroundColor 255 255 255
-	PlayAlertSound 6
-	PlayEffect Yellow
-	MinimapIcon 2 Yellow Star
-
-Show
-	BaseType "Distilled"
-	SetFontSize 50
-	SetTextColor 0 0 0
-	SetBorderColor 255 255 255
-	SetBackgroundColor 173 255 47
-	PlayAlertSound 2
-	PlayEffect Yellow
-	MinimapIcon 1 Yellow Square
-
-Show
-	BaseType "Catalyst" "Breach Splinter"
-	SetBackgroundColor 40 8 97
-	MinimapIcon 1 Purple Raindrop
-
-Show
-	BaseType "Breach Ring"
-	SetBackgroundColor 40 8 97
-	MinimapIcon 1 Purple Diamond
-	PlayEffect Purple
-
 Show
 	Class "Pinnacle Keys"
 	SetTextColor 255 207 255
@@ -230,16 +248,7 @@ Show
 	MinimapIcon 1 Yellow Square
 	SetFontSize 40
 
-Show
-	BaseType "Simulacrum" " Tablet" "Breachstone" "Expedition Logbook" "Test of" "Cowardly Fate" "Deadly Fate" "Victorious Fate" "Bronze Key" "Silver Key" "Gold Key"
-	SetTextColor 255 207 255
-	SetBorderColor 255 207 255
-	SetBackgroundColor 65 20 80
-	PlayAlertSound 2
-	PlayEffect Purple
-	MinimapIcon 1 Purple Square
-	SetFontSize 45
-
+# Worthless currency (only at higher level)
 Hide
 	Class Currency
 	BaseType "Gold" "Artificer's Shard" "Regal Shard" "Transmutation Shard"
@@ -260,6 +269,7 @@ Show
 	SetBorderColor 0 0 0
 	SetBackgroundColor 155 0 0 180
 
+# Useless charms
 Hide
 	BaseType "Ruby Charm" "Sapphire Charm" "Topaz Charm" "Amethyst Charm" "Antidote Charm" "Dousing Charm" "Grounding Charm" "Staunching Charm" "Silver Charm"
 	AreaLevel > 60
@@ -304,90 +314,41 @@ Hide
 Hide
 	Class "One Hand Maces"
 
-### Weird Hybrids
+## Weird Hybrids
+# Armor Evasion/Armour Evasion
 Hide
 	BaseArmour > 0
 	BaseEvasion > 0
 	AreaLevel > 70
 
+# Armor ES/Armour ES
 Hide
 	BaseArmour > 0
 	BaseEnergyShield > 0
 	AreaLevel > 70
 
+# Evasion ES
 #Hide
 #	BaseEvasion > 0
 #	BaseEnergyShield > 0
 #	AreaLevel > 70
 
-#Hide
-#	BaseEvasion > 0
-#	AreaLevel > 70
-
+## Unused defensive types
+# Armour
 Hide
 	BaseArmour > 0
 	AreaLevel > 70
 
-### Armour Chests not hidden
+# Evasion
 #Hide
-#	BaseArmour > 0
+#	BaseEvasion > 0
 #	AreaLevel > 70
-#	Class "Helmets" "Boots" "Gloves" "Shields" "Foci" "Quivers" "One Hand Maces" "Two Hand Maces" "Staves" "Quarterstaves" "Bows" "Crossbows" "Wands" "Sceptres"
 
 ### END ITEM IGNORE
 
 ### START ITEMS
-### WAND
-#Show
-#	BaseType "Withered Wand"
-#	SetFontSize 35
-#	SetBorderColor 211 55 211
-#	PlayAlertSound 1 20
-#
-#Show
-#	BaseType "Siphoning Wand"
-#	SetFontSize 35
-#	SetBorderColor 211 55 211
-#	PlayAlertSound 1 20
 
-### END WAND
-
-### QUARTERSTAFF
-
-#Show
-#	Class Quarterstaff
-#	SetFontSize 35
-#	SetBorderColor 0 255 0
-#	PlayAlertSound 1 20
-
-###
-
-### EV
-
-#Show
-#	BaseEvasion > 0
-#	BaseArmour < 1
-#	BaseEnergyShield < 1
-#	SetFontSize 35
-#	SetBorderColor 0 255 0
-#	PlayAlertSound 1 20
-
-### END EV
-
-### EV ES
-
-#Show
-#	BaseEvasion > 0
-#	BaseArmour < 1
-#	BaseEnergyShield > 0
-#	SetFontSize 35
-#	SetBorderColor 255 255 0
-#	PlayAlertSound 1 20
-
-### END EV ES
-
-### Small Rares
-
+## Small Rares
 Show
 	Class "Rings" "Amulets" "Belts"
 	Rarity Rare
@@ -397,12 +358,9 @@ Show
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Diamond
 
-### END Small Rares
-
 ### END ITEMS
 
 ### MISC
-
 Show
 	Class Belt
 	Rarity > Normal
@@ -423,6 +381,8 @@ Show
 	Height < 4
 	AreaLevel <= 77
 	SetBorderColor 255 255 255
+
+### END MISC
 
 ### HIDE
 Hide
@@ -484,12 +444,13 @@ Hide
 
 ### END HIDE
 
+### START CUSTOM HIGHLIGHTS
 Show
 	BaseType = "Expert"
 	BaseType = "Altar Robe" "Scalper's Jacket" "Keth Raiment"
 	SetBorderColor 255 255 255
 
-
 Show
 	ItemLevel >= 83
 	SetTextColor 255 140 0
+### END CUSTOM HIGHLIGHTS
