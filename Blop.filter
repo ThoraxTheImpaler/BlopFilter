@@ -1,0 +1,496 @@
+
+
+### START CURRENCY
+
+Hide
+	BaseType "Scroll of Wisdom"
+	AreaLevel >= 65
+	Rarity <= Magic
+
+Show
+	BaseType "Scroll of Wisdom"
+	SetFontSize 35
+	SetTextColor 169 169 169
+	SetBorderColor 0 0 0
+	SetBackgroundColor 155 0 0 100
+
+Show
+	BaseType "Chaos Orb" "Exalted Orb" "Orb of Annulment" "Greater Jeweller's Orb"
+	SetFontSize 50
+	SetTextColor 255 255 255
+	SetBorderColor 255 255 255
+	SetBackgroundColor 255 0 0 200
+	PlayAlertSound 2
+	PlayEffect Red
+	MinimapIcon 1 Red Star
+
+Show
+	BaseType "Divine Orb" "Perfect Jeweller's Orb" "Mirror of Kalandra"
+	SetFontSize 50
+	SetTextColor 255 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 255 255 255
+	#PlayAlertSound 6
+	CustomAlertSound "Metal pipe falling sound effect but its more violent.mp3" 50
+	PlayEffect Red
+	MinimapIcon 1 Red Star
+
+###	END CURRENCY
+
+### START 1x1
+Hide
+	BaseType "Rune"
+	AreaLevel > 59
+
+Show
+	BaseType "Rune"
+	AreaLevel < 60
+	SetFontSize 35
+	SetTextColor 0 0 0
+	SetBorderColor 0 0 0
+	SetBackgroundColor 111 177 111
+	PlayAlertSound 12
+
+Show
+	BaseType "Soul Core"
+	BaseType "Azcapa" "Tacati"
+	SetFontSize 35
+	SetTextColor 111 177 111
+	SetBorderColor 0 0 0
+	SetBackgroundColor 255 255 255
+	PlayAlertSound 6
+	PlayEffect Cyan
+	MinimapIcon 1 Cyan Star
+
+Show
+	BaseType "Soul Core"
+	SetFontSize 35
+	SetTextColor 0 0 0
+	SetBorderColor 0 0 0
+	SetBackgroundColor 111 177 111
+	PlayAlertSound 12
+	PlayEffect Cyan
+
+Show
+	Class "Omen"
+	BaseType "Omen of"
+	SetTextColor 255 207 132
+	SetBorderColor 255 207 132
+	SetBackgroundColor 76 51 12
+	PlayAlertSound 2
+	PlayEffect White
+	MinimapIcon 2 White Circle
+	SetFontSize 40
+
+Hide
+	BaseType "Spirit Gem" "Skill Gem" "Support Gem"
+	ItemLevel <= 18
+	AreaLevel > 70
+	SetFontSize 35
+	SetTextColor 0 0 0
+	SetBorderColor 0 0 0
+	SetBackgroundColor 111 111 111
+
+Show
+	BaseType "Spirit Gem" "Skill Gem"
+	ItemLevel > 18
+	SetFontSize 35
+	SetTextColor 0 0 0
+	SetBorderColor 0 0 0
+	PlayAlertSound 2
+	SetBackgroundColor 111 111 111
+
+Show
+	BaseType "Spirit Gem" "Skill Gem"
+	ItemLevel = 20
+	SetFontSize 35
+	SetTextColor 0 0 0
+	SetBorderColor 0 0 0
+	SetBackgroundColor 255 255 255
+	PlayAlertSound 6
+	PlayEffect White
+	MinimapIcon 2 White Star
+
+Show
+	BaseType "Essence"
+	BaseType "Greater"
+	SetFontSize 35
+	SetTextColor 255 255 255
+	SetBorderColor 0 0 0
+	SetBackgroundColor 137 207 240
+	PlayAlertSound 6
+	PlayEffect Cyan
+	Continue
+	Show
+		BaseType "Essence"
+		SetFontSize 35
+		SetTextColor 255 255 255
+		SetBorderColor 0 0 0
+		SetBackgroundColor 137 207 240 200
+
+Show
+	Class Jewel
+	SetFontSize 35
+	SetTextColor 0 0 0
+	SetBorderColor 0 0 0
+	SetBackgroundColor 127 255 0
+	PlayEffect Green
+	MinimapIcon 1 Green Kite
+	PlayAlertSound 3
+
+Hide
+	BaseType "Waystone"
+	WaystoneTier < 14
+	AreaLevel >= 75
+
+Show
+	BaseType "Waystone"
+	WaystoneTier < 15
+	SetFontSize 35
+	SetTextColor 0 0 0
+	SetBorderColor 0 0 0
+	SetBackgroundColor 148 111 211
+	PlayAlertSound 4
+	MinimapIcon 1 Purple Square
+
+Show
+	BaseType "Waystone"
+	WaystoneTier >= 15
+	SetFontSize 35
+	SetTextColor 255 255 255
+	SetBorderColor 0 0 0
+	SetBackgroundColor 191 64 191
+	PlayAlertSound 7
+	MinimapIcon 1 Purple Star
+	PlayEffect Purple
+
+### LEAGUES
+Hide
+	BaseType "Ultimatum" "Barya"
+	ItemLevel < 80
+	AreaLevel > 77
+	SetFontSize 50
+	SetTextColor 255 255 255
+	SetBorderColor 255 255 255
+	SetBackgroundColor 148 111 211
+	PlayEffect Grey
+
+
+Show
+	BaseType "Ultimatum" "Barya"
+	SetFontSize 50
+	SetTextColor 255 255 255
+	SetBorderColor 255 255 255
+	SetBackgroundColor 148 111 211
+	PlayAlertSound 4
+	PlayEffect Grey
+
+Show
+	BaseType "Relic"
+	PlayEffect Grey
+	SetBorderColor 218 160 109
+
+Show
+	BaseType "Distilled Disgust" "Distilled Despair" "Distilled Fear" "Distilled Suffering" "Distilled Isolation"
+	SetFontSize 50
+	SetTextColor 173 255 47
+	SetBorderColor 173 255 47
+	SetBackgroundColor 255 255 255
+	PlayAlertSound 6
+	PlayEffect Yellow
+	MinimapIcon 2 Yellow Star
+
+Show
+	BaseType "Distilled"
+	SetFontSize 50
+	SetTextColor 0 0 0
+	SetBorderColor 255 255 255
+	SetBackgroundColor 173 255 47
+	PlayAlertSound 2
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Square
+
+Show
+	BaseType "Catalyst" "Breach Splinter"
+	SetBackgroundColor 40 8 97
+	MinimapIcon 1 Purple Raindrop
+
+Show
+	BaseType "Breach Ring"
+	SetBackgroundColor 40 8 97
+	MinimapIcon 1 Purple Diamond
+	PlayEffect Purple
+
+Show
+	Class "Pinnacle Keys"
+	SetTextColor 255 207 255
+	SetBorderColor 255 207 255
+	SetBackgroundColor 65 20 80
+	PlayAlertSound 2
+	PlayEffect White
+	MinimapIcon 1 Yellow Square
+	SetFontSize 40
+
+Show
+	BaseType "Simulacrum" " Tablet" "Breachstone" "Expedition Logbook" "Test of" "Cowardly Fate" "Deadly Fate" "Victorious Fate" "Bronze Key" "Silver Key" "Gold Key"
+	SetTextColor 255 207 255
+	SetBorderColor 255 207 255
+	SetBackgroundColor 65 20 80
+	PlayAlertSound 2
+	PlayEffect Purple
+	MinimapIcon 1 Purple Square
+	SetFontSize 45
+
+Hide
+	Class Currency
+	BaseType "Gold" "Artificer's Shard" "Regal Shard" "Transmutation Shard"
+	AreaLevel > 76
+
+Show
+	Class Currency
+	BaseType "Gold"
+	SetFontSize 25
+	SetTextColor 169 169 169
+	SetBorderColor 0 0 0
+	SetBackgroundColor 184 115 51 180
+
+Show
+	Class Currency
+	SetFontSize 35
+	SetTextColor 169 169 169
+	SetBorderColor 0 0 0
+	SetBackgroundColor 155 0 0 180
+
+Hide
+	BaseType "Ruby Charm" "Sapphire Charm" "Topaz Charm" "Amethyst Charm" "Antidote Charm" "Dousing Charm" "Grounding Charm" "Staunching Charm" "Silver Charm"
+	AreaLevel > 60
+
+### END 1X1
+
+# S Grade: The most valuable uniques, ~25ex to infinity
+Show # $type->uniques $tier->t1
+	Rarity Unique
+	BaseType == "Ring" "Diamond" "Emerald Ring" "Gold Amulet" "Ultimate Mana Flask" "Utility Belt" "Incense Relic" "Smuggler Coat" "Sapphire" "Furtive Wraps" "Emerald" "Ultimate Life Flask" "Ornate Belt" "Vase Relic" "Time-Lost Diamond" "Ruby" "Armoured Cap" "Grand Regalia" "Stone Tower Shield" "Timeless Jewel" "Wyrm Quarterstaff" "Crucible Tower Shield" "Fine Bracers" "Conqueror Plate"
+	SetFontSize 45
+	SetTextColor 175 96 37 255
+	SetBorderColor 175 96 37 255
+	SetBackgroundColor 255 255 255 255
+	PlayAlertSound 6 300
+	PlayEffect Red
+	MinimapIcon 0 Red Star
+
+# A Grade: High value uniques, ~10ex to ~20ex
+Show # $type->uniques $tier->t2
+	Rarity Unique
+	BaseType == "Feathered Tiara" "Spiked Club" "Felt Cap" "Burnished Gauntlets" "Brimmed Helm" "Heavy Crown" "Altar Robe" "Dualstring Bow"
+	SetFontSize 45
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 175 96 37 255
+	PlayAlertSound 1 300
+	PlayEffect Red
+	MinimapIcon 0 Yellow Star
+
+Show
+	Rarity = Unique
+	PlayEffect Orange
+	PlayAlertSound 16
+
+### ITEM IGNORE
+
+#Hide unusable bases
+Hide
+	BaseType "Crackling Quarterstaff" "Cultist Bow"
+
+Hide
+	Class "One Hand Maces"
+
+### Weird Hybrids
+Hide
+	BaseArmour > 0
+	BaseEvasion > 0
+	AreaLevel > 70
+
+Hide
+	BaseArmour > 0
+	BaseEnergyShield > 0
+	AreaLevel > 70
+
+#Hide
+#	BaseEvasion > 0
+#	BaseEnergyShield > 0
+#	AreaLevel > 70
+
+#Hide
+#	BaseEvasion > 0
+#	AreaLevel > 70
+
+Hide
+	BaseArmour > 0
+	AreaLevel > 70
+
+### Armour Chests not hidden
+#Hide
+#	BaseArmour > 0
+#	AreaLevel > 70
+#	Class "Helmets" "Boots" "Gloves" "Shields" "Foci" "Quivers" "One Hand Maces" "Two Hand Maces" "Staves" "Quarterstaves" "Bows" "Crossbows" "Wands" "Sceptres"
+
+### END ITEM IGNORE
+
+### START ITEMS
+### WAND
+#Show
+#	BaseType "Withered Wand"
+#	SetFontSize 35
+#	SetBorderColor 211 55 211
+#	PlayAlertSound 1 20
+#
+#Show
+#	BaseType "Siphoning Wand"
+#	SetFontSize 35
+#	SetBorderColor 211 55 211
+#	PlayAlertSound 1 20
+
+### END WAND
+
+### QUARTERSTAFF
+
+#Show
+#	Class Quarterstaff
+#	SetFontSize 35
+#	SetBorderColor 0 255 0
+#	PlayAlertSound 1 20
+
+###
+
+### EV
+
+#Show
+#	BaseEvasion > 0
+#	BaseArmour < 1
+#	BaseEnergyShield < 1
+#	SetFontSize 35
+#	SetBorderColor 0 255 0
+#	PlayAlertSound 1 20
+
+### END EV
+
+### EV ES
+
+#Show
+#	BaseEvasion > 0
+#	BaseArmour < 1
+#	BaseEnergyShield > 0
+#	SetFontSize 35
+#	SetBorderColor 255 255 0
+#	PlayAlertSound 1 20
+
+### END EV ES
+
+### Small Rares
+
+Show
+	Class "Rings" "Amulets" "Belts"
+	Rarity Rare
+	SetFontSize 40
+	SetTextColor 233 206 75
+	SetBorderColor 233 206 75
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Diamond
+
+### END Small Rares
+
+### END ITEMS
+
+### MISC
+
+Show
+	Class Belt
+	Rarity > Normal
+	AreaLevel < 70
+	SetFontSize 35
+	SetBorderColor 255 255 255
+	PlayAlertSound 1 20
+
+Show
+	Quality > 0
+	Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "Quivers" "One Hand Maces" "Two Hand Maces" "Staves" "Quarterstaves" "Bows" "Crossbows" "Wands" "Sceptres"
+	Height < 4
+	SetBorderColor 255 255 255 
+	SetBackgroundColor 213 186 152 100
+
+Show
+	Sockets > 0
+	Height < 4
+	AreaLevel <= 77
+	SetBorderColor 255 255 255
+
+### HIDE
+Hide
+	AreaLevel > 70
+	Rarity <= Magic
+	Class "Flasks"
+
+Hide
+	AreaLevel >= 78
+	ItemLevel <= 81
+	Rarity <= Magic
+	Class "Belts" "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows"
+
+Hide
+	AreaLevel >= 78
+	Rarity <= Magic
+	Class "Belts" "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows"
+
+Hide
+	AreaLevel > 75
+	Rarity <= Magic
+	DropLevel < 64
+	Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows"
+
+Hide
+	AreaLevel > 73
+	Rarity <= Magic
+	DropLevel < 60
+	Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows"
+
+Hide
+	AreaLevel > 72
+	Rarity <= Magic
+	DropLevel < 55
+	Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows"
+
+# Quivers have some relevant bases at 50+ so we treat them different
+Hide
+	AreaLevel > 74
+	Rarity <= Magic
+	DropLevel < 50
+	Class "Quivers"
+
+Hide
+	AreaLevel > 70
+	Rarity <= Normal
+	DropLevel < 50
+	Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "Quivers" "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows"
+
+Hide
+	Rarity <= Normal
+	Class "Flasks" "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "Quivers" "One Hand Maces" "Two Hand Maces" "Staves" "Quarterstaves" "Bows" "Crossbows" "Wands" "Sceptres"
+	AreaLevel >= 65
+
+Hide
+	Rarity <= Magic
+	Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "Quivers" "One Hand Maces" "Two Hand Maces" "Staves" "Quarterstaves" "Bows" "Crossbows" "Wands" "Sceptres"
+	AreaLevel >= 65
+
+### END HIDE
+
+Show
+	BaseType = "Expert"
+	BaseType = "Altar Robe" "Scalper's Jacket" "Keth Raiment"
+	SetBorderColor 255 255 255
+
+
+Show
+	ItemLevel >= 83
+	SetTextColor 255 140 0
