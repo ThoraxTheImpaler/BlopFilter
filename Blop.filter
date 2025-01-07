@@ -1,7 +1,13 @@
-
+#### TABLE OF CONTENTS ####
+### START CURRENCY
+### START LEAGUES
+### START 1x1
+### START HIDDEN BASES
+### START ITEMS
+### START CUSTOM HIGHLIGHTS
+### START ILVL HIDE
 
 ### START CURRENCY
-
 Hide
 	BaseType "Scroll of Wisdom"
 	AreaLevel >= 65
@@ -36,7 +42,7 @@ Show
 
 ###	END CURRENCY
 
-### LEAGUES
+### START LEAGUES
 # Low level keys
 Hide
 	BaseType "Ultimatum" "Barya"
@@ -305,7 +311,7 @@ Show
 	PlayEffect Orange
 	PlayAlertSound 16
 
-### ITEM IGNORE
+### START HIDDEN BASES
 
 #Hide unusable bases
 Hide
@@ -344,7 +350,7 @@ Hide
 #	BaseEvasion > 0
 #	AreaLevel > 70
 
-### END ITEM IGNORE
+### END HIDDEN BASES
 
 ### START ITEMS
 
@@ -360,7 +366,7 @@ Show
 
 ### END ITEMS
 
-### MISC
+### START MISC
 Show
 	Class Belt
 	Rarity > Normal
@@ -384,7 +390,7 @@ Show
 
 ### END MISC
 
-### HIDE
+### START ILVL HIDE
 Hide
 	AreaLevel > 70
 	Rarity <= Magic
@@ -442,7 +448,7 @@ Hide
 	Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "Quivers" "One Hand Maces" "Two Hand Maces" "Staves" "Quarterstaves" "Bows" "Crossbows" "Wands" "Sceptres"
 	AreaLevel >= 65
 
-### END HIDE
+### END ILVL HIDE
 
 ### START CUSTOM HIGHLIGHTS
 Show
