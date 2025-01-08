@@ -458,5 +458,5 @@ Show
 
 Show
 	ItemLevel >= 83
-	SetTextColor 255 140 0
+	SetTextColor 163 53 238
 ### END CUSTOM HIGHLIGHTS
